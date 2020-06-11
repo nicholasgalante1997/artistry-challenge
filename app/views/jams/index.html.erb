@@ -1,0 +1,7 @@
+<h1>Jams Session Index Page!</h1>
+<% @jams.each do |j| %>
+
+<p><%= link_to j.artist.name, jam_path(j)%></p><br>
+<%end%>
+
+<p><%= link_to "New Jam Sesh", new_jam_path%>

@@ -1,0 +1,10 @@
+<h1>NEW JAM SESH</h1>
+
+<%= form_for @jam do |f| %>
+<%= f.collection_select :artist_id, @artists, :id, :name %>
+<%= f.collection_select :instrument_id, @instruments, :id, :name %>
+<%= f.number_field :length %>
+<%= f.submit %>
+<%end%>
+
+
